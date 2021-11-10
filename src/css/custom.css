@@ -5,15 +5,23 @@
  */
 
 /* You can override the default Infima variables here. */
+@import url("https://rsms.me/inter/inter.css");
+
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: #6f9abc;
+  --ifm-color-primary-dark: #4f7898;
+  --ifm-color-primary-darker: #355269;
+  --ifm-color-primary-darkest: #283c4c;
+  --ifm-color-primary-light: #a6c5dd;
+  --ifm-color-primary-lighter: #bdd4e6;
+  --ifm-color-primary-lightest: #d1e1ef;
   --ifm-code-font-size: 95%;
+
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    :root { font-family: 'Inter var', sans-serif; }
 }
 
 .docusaurus-highlight-code-line {
